@@ -1,0 +1,74 @@
+header {
+  text-align: center;
+  padding: 15px;
+  margin: 15px;
+}
+
+main {
+  padding: 15px;
+  margin: 15px;
+}
+
+h1 {
+  color: rgb(4, 109, 109);
+}
+
+#add-item-section {
+  text-align: center;
+  padding: 15px;
+  margin: auto;
+}
+
+#add-item-input {
+  display: block;
+  border: none;
+  border-bottom: 4px solid rgb(4, 109, 109);
+  margin: auto;
+  padding: 5px;
+  text-align: center;
+  cursor: text;
+  font-size: x-large;
+}
+
+#add-item-input:focus, #add-item-btn:focus {
+  outline: none;  
+}
+#add-item-btn:active {
+  border: 3px solid rgb(4, 109, 109);
+  padding: 5px;
+}
+
+
+#add-item-btn {
+  margin: 30px auto;
+  padding: 8px;
+  background-color: transparent;
+  border: none;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: rgb(4, 109, 109);
+  font-weight: bold;
+  font-size: large;
+}
+
+
+#item-list-section li {
+  list-style: none;
+  font-size: x-large;
+  font-family: 'Lucida Grande';
+  font-weight: bolder;
+  color: rgb(3, 75, 75)
+}
+
+#item-list-section {
+  text-align: left;
+  padding: 15px;
+  margin: auto;
+}
+
+#item-list-section ul {
+  list-style: none;
+  width: 30%;
+  padding: 10px;
+  margin: auto;
+}
+
