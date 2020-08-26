@@ -24,9 +24,13 @@ class App extends Component {
     return this.setState({itemList: [...this.state.itemList, itemToAdd], item:""});
   }
 
+  // handleKeyPress = (event) => {
+  //   if(event.key === 'Enter'){
+  //     console.log('enter press here! ')
+  //   }
+  // }
+
   render(){
-    console.log(this.state.item);
-    console.log(this.state.itemList)
   return (
     <div>
       <header>
@@ -35,7 +39,7 @@ class App extends Component {
       <main>
         <section id="add-item-section" className="container">
           <div>
-            <input id="add-item-input" type="text" name="item" value={this.state.item} onChange={(e)=>this.handleInput(e)}/> 
+            <input id="add-item-input" type="text" name="item" value={this.state.item} onKeyPress={(e)=> e.key === 'Enter' ? this.addItem(e):""} onChange={(e)=>this.handleInput(e)}/> 
           </div>
           <div>
             <input id="add-item-btn" type="button" value="Add" onClick={(e)=>this.addItem(e)}/>
@@ -43,8 +47,8 @@ class App extends Component {
         </section>
         <section id="item-list-section" className="container">
          
-          {this.state.itemList.map((item)=>(
-            <ItemList item={item} />
+          {this.state.itemList.map((item,index)=>(
+            <ItemList key={index} item={item} />
           ))}
                  
         </section>
